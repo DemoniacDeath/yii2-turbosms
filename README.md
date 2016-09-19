@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist avator/yii2-turbosms "*"
+php composer.phar require --prefer-dist demoniacdeath/yii2-turbosms "*"
 ```
 
 or add
 
 ```
-"avator/yii2-turbosms": "*"
+"demoniacdeath/yii2-turbosms": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -24,7 +24,7 @@ to the require section of your `composer.json` file.
 Subsequently, run
 
 ```
-./yii migrate/up --migrationPath=@vendor/avator/yii2-turbosms/migrations
+./yii migrate/up --migrationPath=@vendor/demoniacdeath/yii2-turbosms/migrations
 ```
 
 ## Basic setup
@@ -43,7 +43,7 @@ Add the following in your config:
 ...
     'components' => [
         'turbosms' => [
-            'class' => 'avator\turbosms\Turbosms',
+            'class' => 'demoniacdeath\turbosms\Turbosms',
             'sender' => 'your_sender',
             'login' => 'your_login',
             'password' => 'your_password',
@@ -58,7 +58,7 @@ If you want test sms in debug mode change config:
 ...
     'components' => [
         'turbosms' => [
-            'class' => 'avator\turbosms\Turbosms',
+            'class' => 'demoniacdeath\turbosms\Turbosms',
             'sender' => 'your_sender',
             'login' => 'your_login',
             'password' => 'your_password',

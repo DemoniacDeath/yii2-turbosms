@@ -1,6 +1,6 @@
 <?php
 
-namespace avator\turbosms\models;
+namespace demoniacdeath\turbosms\models;
 
 use Yii;
 

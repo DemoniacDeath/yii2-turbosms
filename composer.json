@@ -1,5 +1,5 @@
 {
-    "name": "avator/yii2-turbosms",
+    "name": "demoniacdeath/yii2-turbosms",
     "description": "Yii2 turbosms",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","helpers","turbosms","sms"],
@@ -8,6 +8,10 @@
         {
             "name": "Oleksii Golub",
             "email": "sclub2018@yandex.ua"
+        },
+        {
+            "name": "Michael Skvortsov",
+            "email": "demoniac.death@gmail.com"
         }
     ],
     "require": {
@@ -15,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "avator\\turbosms\\": ""
+            "demoniacdeath\\turbosms\\": ""
         }
     }
 }

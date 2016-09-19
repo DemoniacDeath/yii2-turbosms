@@ -1,11 +1,11 @@
 <?php
-namespace avator\turbosms;
+namespace demoniacdeath\turbosms;
 
 use Yii;
 use SoapClient;
 use yii\base\InvalidConfigException;
 use yii\base\Component;
-use avator\turbosms\models\TurboSmsSent;
+use demoniacdeath\turbosms\models\TurboSmsSent;
 
 /**
  *
