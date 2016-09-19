@@ -249,11 +249,12 @@ class Turbosms extends Component
             $this->lastSendMessageId = $result->SendSMSResult->ResultArray[1];
         }
 
-        if (empty($result->SendSMSResult->ResultArray[0]) ||
-            $result->SendSMSResult->ResultArray[0] != 'Сообщения успешно отправлены'
+        if (!empty($result->SendSMSResult->ResultArray[1]) && !(
+            (!empty($result->SendSMSResult->ResultArray[0]) &&
+            $result->SendSMSResult->ResultArray[0] == 'Сообщения успешно отправлены'))
         ) {
             $this->sendStatus = 0;
-            $message = preg_replace('/%error%/i', $result->SendSMSResult->ResultArray, $this->errorMessage);
+            $message = preg_replace('/%error%/i', $result->SendSMSResult->ResultArray[1], $this->errorMessage);
         }
 
         return $message;
